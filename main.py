@@ -12,23 +12,43 @@ from asciimatics.parsers import AnsiTerminalParser, Parser
 import sys
 import sqlite3
 import subprocess 
+from thispersondoesnotexist import get_online_person
+from PIL import Image
+
+
+picture = get_online_person()  # bytes representation of the image
+# Save to a file
+from thispersondoesnotexist import save_picture
+save_picture(picture, "images/user.jpg")
+# If no filename is provided, one will be generated using the checksum of the picture
+#save_picture(picture)
+
+image = Image.open('images/user.jpg')
+new_image_50 = image.resize((50, 50))
+new_image_25 = image.resize((25, 25))
+new_image_10 = image.resize((10, 10))
+new_image_50.save('images/users-50/user.jpg')
+new_image_25.save('images/users-25/user.jpg')
+new_image_10.save('images/users-10/user.jpg')
+
+
 
 debug = False
 
 # Run the command and capture the output 
-output = subprocess.check_output("bin/climage --unicode images/users-10/User6.jpg", shell=True) # Replace "ls" with your desired command 
+output = subprocess.check_output("bin/climage --unicode images/users-10/user.jpg", shell=True) # Replace "ls" with your desired command 
 # Convert the output to a string (Python 3.x) 
 output = output.decode("utf-8") 
 # Print the output 
 ansi_text1 = output
 # Run the command and capture the output 
-output = subprocess.check_output("bin/climage --unicode images/users-25/User6.jpg", shell=True) # Replace "ls" with your desired command 
+output = subprocess.check_output("bin/climage --unicode images/users-25/user.jpg", shell=True) # Replace "ls" with your desired command 
 # Convert the output to a string (Python 3.x) 
 output = output.decode("utf-8") 
 # Print the output 
 ansi_text2 = output
 # Run the command and capture the output 
-output = subprocess.check_output("bin/climage --unicode images/users-50/User6.jpg", shell=True) # Replace "ls" with your desired command 
+output = subprocess.check_output("bin/climage --unicode images/users-50/user.jpg", shell=True) # Replace "ls" with your desired command 
 # Convert the output to a string (Python 3.x) 
 output = output.decode("utf-8") 
 # Print the output 
