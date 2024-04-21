@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: kdtree
+Version: 0.16
+Summary: A Python implemntation of a kd-tree
+Home-page: https://github.com/stefankoegl/kdtree
+Author: Stefan Kögl
+Author-email: stefan@skoegl.net
+License: ISC license
+Download-URL: http://pypi.python.org/packages/source/k/kdtree/kdtree-0.16.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+
+This package provides a simple implementation of a kd-tree in Python.
+https://en.wikipedia.org/wiki/K-d_tree
+
