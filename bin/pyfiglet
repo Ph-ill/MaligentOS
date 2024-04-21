@@ -1,4 +1,4 @@
-#!/home/phill/Projects/Terminal-Based-Game/bin/python
+#!/home/phill/Projects/MaligentOS/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -16,19 +16,19 @@ import subprocess
 debug = False
 
 # Run the command and capture the output 
-output = subprocess.check_output("bin/climage --unicode Images/Users-10/User6.jpg", shell=True) # Replace "ls" with your desired command 
+output = subprocess.check_output("bin/climage --unicode images/users-10/User6.jpg", shell=True) # Replace "ls" with your desired command 
 # Convert the output to a string (Python 3.x) 
 output = output.decode("utf-8") 
 # Print the output 
 ansi_text1 = output
 # Run the command and capture the output 
-output = subprocess.check_output("bin/climage --unicode Images/Users-25/User6.jpg", shell=True) # Replace "ls" with your desired command 
+output = subprocess.check_output("bin/climage --unicode images/users-25/User6.jpg", shell=True) # Replace "ls" with your desired command 
 # Convert the output to a string (Python 3.x) 
 output = output.decode("utf-8") 
 # Print the output 
 ansi_text2 = output
 # Run the command and capture the output 
-output = subprocess.check_output("bin/climage --unicode Images/Users-50/User6.jpg", shell=True) # Replace "ls" with your desired command 
+output = subprocess.check_output("bin/climage --unicode images/users-50/User6.jpg", shell=True) # Replace "ls" with your desired command 
 # Convert the output to a string (Python 3.x) 
 output = output.decode("utf-8") 
 # Print the output 
